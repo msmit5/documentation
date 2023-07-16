@@ -141,7 +141,7 @@ Pour les débutants, décomposons le début du fichier de configuration. Par exe
 
 Nous voulons qu'elles soient redirigées vers le port 443 (ou http sécurisé, mieux connu sous SSL). Notre section de configuration du port 80 sera réduite au minimum :
 
-```
+```apache
 <VirtualHost *:80>
         ServerName www.ourownwiki.com
         ServerAdmin username@rockylinux.org
@@ -155,7 +155,7 @@ Une redirection permanente va être apprise par les moteurs de recherche et rapi
 
 Ensuite, nous devons définir la partie https du fichier de configuration. La section http est dupliquée par clarté pour montrer que tout cela se passe dans le même fichier de configuration :
 
-```
+```apache
 <VirtualHost *:80>
         ServerName www.ourownwiki.com
         ServerAdmin username@rockylinux.org
